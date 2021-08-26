@@ -47,7 +47,7 @@ namespace ProMVC.Controllers
         // GET: Produto/Create
         public IActionResult Create()
         {
-            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Id");
+            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Descricao");
             return View();
         }
 
@@ -64,7 +64,7 @@ namespace ProMVC.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Id", produtoModel.CategoriaId);
+            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Descricao", produtoModel.CategoriaId);
             return View(produtoModel);
         }
 
@@ -81,7 +81,7 @@ namespace ProMVC.Controllers
             {
                 return NotFound();
             }
-            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Id", produtoModel.CategoriaId);
+            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Descricao", produtoModel.CategoriaId);
             return View(produtoModel);
         }
 
@@ -117,7 +117,7 @@ namespace ProMVC.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Id", produtoModel.CategoriaId);
+            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Descricao", produtoModel.CategoriaId);
             return View(produtoModel);
         }
 
