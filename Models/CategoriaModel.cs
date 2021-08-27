@@ -12,6 +12,6 @@ namespace ProMVC.Models
         [Display(Name = "Descrição")]
         [Required(ErrorMessage ="Campo obrigatório!")]
         public string Descricao { get; set; }
-        public List<ProdutoModel> Produtos { get; set; }
+        //public List<ProdutoModel> Produtos { get; set; }
     }
 }
