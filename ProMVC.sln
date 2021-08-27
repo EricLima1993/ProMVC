@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProMVC", "ProMVC.csproj", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProMVC_API", "..\ProMVC_API\ProMVC_API.csproj", "{B0D63AF2-341B-43E0-BBBE-7F4485361E90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProMVC_PTest", "..\ProMVC_PTest\ProMVC_PTest.csproj", "{DA505553-D927-49EB-A647-6B37F58B9182}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B0D63AF2-341B-43E0-BBBE-7F4485361E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0D63AF2-341B-43E0-BBBE-7F4485361E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0D63AF2-341B-43E0-BBBE-7F4485361E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA505553-D927-49EB-A647-6B37F58B9182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA505553-D927-49EB-A647-6B37F58B9182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA505553-D927-49EB-A647-6B37F58B9182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA505553-D927-49EB-A647-6B37F58B9182}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

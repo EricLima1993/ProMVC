@@ -8,8 +8,8 @@ namespace ProMVC.Models
 {
     public class Context: DbContext
     {
-        public DbSet<CategoriaModel> Categoria { get; set; }
-        public DbSet<ProdutoModel> Produto { get; set; }
+        public virtual DbSet<CategoriaModel> Categoria { get; set; }
+        public virtual DbSet<ProdutoModel> Produto { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Ecommerce;Integrated Security=True");
